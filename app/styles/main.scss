@@ -1,0 +1,208 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$white: rgba(236, 238, 245,1);
+$blue: rgba(57,211,209, 1);
+$deep-blue: rgba(40, 163, 179, 1);
+$red: rgba(214, 41, 41, 1);
+$black: rgba(42,48,51, 1);
+
+@import "typography";
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding-top: 0;
+  background: transparent url("/images/retina_wood.png") repeat;
+  padding-bottom: 0px;
+}
+
+.red-text {
+  color: $red;
+}
+
+.navbar-brand {
+  border-right: 1px solid $white;
+  margin-right: 16px;
+}
+
+.clear {
+  clear: both;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.navbar-inverse {
+  background: $black;
+  a {
+    color: $white !important;
+    &:hover {
+      color: $blue !important;
+    }
+  }
+  a.red-text {
+    background-color: $blue !important;
+  }
+}
+
+.btn-success {
+  background: $red;
+  border-color: $black;
+  &:hover {
+    background: darken($red,10);
+  }
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  background-color: $black;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  width: 100%;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 0;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.section {
+  @include clearfix;
+  clear: both;
+  padding: 100px 32px;
+  text-align: justify;
+}
+
+.center {
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.breaker{
+  @include clearfix;
+}
+
+.icon {
+  width: 200px;
+  float: left;
+  margin: 0 30px 32px;
+}
+
+.icon-small {
+  width: 72px;
+  margin: 0 32px 16px 0;
+}
+
+.icon-xsmall {
+  width: 32px;
+  margin: 0 16px 16px 0;
+}
+
+#about {
+  padding-top: 200px;
+  padding-bottom: 200px;
+   text-align: center;
+  color: #fff;
+  background: $blue;
+}
+
+#when {
+  text-align: left;
+  height: auto;
+}
+
+
+#where {
+  height: auto;
+  background: $black;
+  padding-top: 50px;
+  color: #fff;
+
+  iframe {
+    width: 100%;
+    border: 8px solid $red !important;
+  }
+}
+
+.drivingdir {
+  line-height: 32px;
+  a {
+    color: $white;
+  }
+}
+
+.directions {
+  @include clearfix;
+  margin-bottom: 0px;
+}
+
+.directions.top {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#travel {
+  background: #fff;
+}
+
+.modal-content {
+  @include clearfix;
+}
+
+.modal-header {
+  @include clearfix;
+  padding: 16px 16px 0px;
+  margin-bottom: 16px;
+}
